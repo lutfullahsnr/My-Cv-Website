@@ -3,64 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benim Özgeçmişim</title>
+    <title>Lütfullah Şener - Özgeçmiş</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Başlık ve Profil -->
     <header>
         <img src="images/profile.jpg" alt="Profil Fotoğrafı" class="profile-img">
-        <h1>Lütfullah Şener</h1>
+        <h1 class="header-name">Lütfullah Şener</h1>
         <p>Bilgisayar Mühendisi | Unity ile Oyun Geliştirme</p>
     </header>
 
-    <!-- Hakkımda -->
     <section class="section">
         <h2><i class="fas fa-user"></i> Hakkımda</h2>
-        <p>Merhaba! Ben Lütfullah. Unity ile mobil oyun geliştiricisiyim.</p>
+        <p>Merhaba! Ben Lütfullah. Unity ile mobil oyun geliştiriyorum.</p>
     </section>
 
-    <!-- Deneyim -->
+    <section class="section">
+        <h2><i class="fas fa-code"></i> Yetenekler</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programlama</h3>
+                <ul>
+                    <li>C# (Unity)</li>
+                    <li>C</li>
+                    <li>PHP</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Oyun Geliştirme</h3>
+                <ul>
+                    <li>Unity 2D/3D</li>
+                    <li>Game Design</li>
+                    <li>Game Optimization</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <section class="section">
         <h2><i class="fas fa-briefcase"></i> Deneyim</h2>
         <ul>
-            <li><strong>Google Oyun ve Uygulama Akademisi</strong> - Unity Developer (2024-Halen)</li>
+            <li>
+                <a href="https://miugamesstudio.com/" target="_blank" class="experience-link">
+                    <strong>Miu Games</strong> - Unity Developer (2024-Halen)
+                </a>
+            </li>
         </ul>
     </section>
 
-    <!-- Eğitim -->
     <section class="section">
         <h2><i class="fas fa-graduation-cap"></i> Eğitim</h2>
         <ul>
-            <li><strong>Karabük Üniversitesi</strong> - Bilgisayar Mühendisliği (2022-Halen)</li>
+            <li>
+                <a href="https://www.karabuk.edu.tr/" target="_blank" class="education-link">
+                    <strong>Karabük Üniversitesi</strong> - Bilgisayar Mühendisliği (2022-Halen)
+                </a>
+            </li>
+            <li>
+                <a href="https://yapayzekaveteknolojiakademisi.com/" target="_blank" class="education-link">
+                    <strong>Google Oyun ve Uygulama Akademisi</strong> - Unity ile Oyun Geliştirme (2023-2024)
+                </a>
+            </li>
         </ul>
     </section>
 
-    <!-- İletişim -->
     <section class="section contact">
         <h2><i class="fas fa-envelope"></i> İletişim</h2>
-        <p><i class="fas fa-envelope"></i> lutfullahsener@gmail.com</p>
+        <p>
+            <a href="mailto:lutfullahsener@gmail.com?subject=İletişim" class="contact-link">
+                <i class="fas fa-envelope"></i> lutfullahsener@gmail.com
+            </a>
+        </p>
         <p><i class="fas fa-phone"></i> +90 546 765 60 33</p>
-        <p><i class="fab fa-github"></i> github.com/lutfullahsnr</p>
-        <!-- PDF İndirme Butonu -->
-        <a href="cv.pdf" download class="pdf-btn">
+        <p>
+            <a href="https://github.com/lutfullahsnr" target="_blank" class="contact-link">
+                <i class="fab fa-github"></i> github.com/lutfullahsnr
+            </a>
+        </p>
+        <a href="Lütfullah Şener - CV.pdf" download class="pdf-btn">
             <i class="fas fa-download"></i> CV'yi PDF Olarak İndir
         </a>
     </section>
+
     <button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button>
 
-<script>
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    darkModeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        // Buton metnini değiştir
-        if (document.body.classList.contains('dark-mode')) {
-            darkModeToggle.textContent = '☀️ Light Mode';
-        } else {
-            darkModeToggle.textContent = '🌙 Dark Mode';
-        }
-    });
-</script>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                darkModeToggle.textContent = '☀️ Light Mode';
+            } else {
+                darkModeToggle.textContent = '🌙 Dark Mode';
+            }
+        });
+    </script>
 </body>
 </html>
