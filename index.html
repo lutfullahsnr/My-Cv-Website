@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benim Özgeçmişim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Başlık ve Profil -->
+    <header>
+        <img src="images/profile.jpg" alt="Profil Fotoğrafı" class="profile-img">
+        <h1>Lütfullah Şener</h1>
+        <p>Bilgisayar Mühendisi | Unity ile Oyun Geliştirme</p>
+    </header>
+
+    <!-- Hakkımda -->
+    <section class="section">
+        <h2><i class="fas fa-user"></i> Hakkımda</h2>
+        <p>Merhaba! Ben Lütfullah. Unity ile mobil oyun geliştiricisiyim.</p>
+    </section>
+
+    <!-- Deneyim -->
+    <section class="section">
+        <h2><i class="fas fa-briefcase"></i> Deneyim</h2>
+        <ul>
+            <li><strong>Google Oyun ve Uygulama Akademisi</strong> - Unity Developer (2024-Halen)</li>
+        </ul>
+    </section>
+
+    <!-- Eğitim -->
+    <section class="section">
+        <h2><i class="fas fa-graduation-cap"></i> Eğitim</h2>
+        <ul>
+            <li><strong>Karabük Üniversitesi</strong> - Bilgisayar Mühendisliği (2022-Halen)</li>
+        </ul>
+    </section>
+
+    <!-- İletişim -->
+    <section class="section contact">
+        <h2><i class="fas fa-envelope"></i> İletişim</h2>
+        <p><i class="fas fa-envelope"></i> lutfullahsener@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +90 546 765 60 33</p>
+        <p><i class="fab fa-github"></i> github.com/lutfullahsnr</p>
+        <!-- PDF İndirme Butonu -->
+        <a href="cv.pdf" download class="pdf-btn">
+            <i class="fas fa-download"></i> CV'yi PDF Olarak İndir
+        </a>
+    </section>
+    <button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button>
+
+<script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        // Buton metnini değiştir
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeToggle.textContent = '☀️ Light Mode';
+        } else {
+            darkModeToggle.textContent = '🌙 Dark Mode';
+        }
+    });
+</script>
+</body>
+</html>
